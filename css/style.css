@@ -1,11 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar   */
 header.navigation {
-    background-color: #333;
+    background-color: #5b5b5b;
     color: white;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+h3 {
+    color: #CE2020;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -13,16 +23,82 @@ nav ul {
     display: flex;
     align-items: center;
 }
+
 nav li {
     margin-right: 10px;
 }
+
 nav a {
     text-decoration: none;
     color: white;
     padding: 8px 15px;
     border-radius: 5px;
-    background-color: #555;
+    background-color: #CE2020;
 }
+.phone-icon-button {
+    width: 50px; /* Set your desired width */
+    height: 50px; /* Set your desired height */
+    border-radius: 50%; /* Make the button a circle */
+    overflow: hidden;
+}
+.phone-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure the entire image fits within the circle */
+    border-radius: 50%; /* Make sure the image is also round */
+}
+
 .logo img {
-    max-height: 40px; /* Adjust the max height as needed */
+    max-height: 80px;
+}
+
+/*Hero image section*/
+.hero-container {
+    position: relative;
+    height: 700px;
+    background-image: url('../images/heroImg.png');
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero-text h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+}
+
+.hero-button {
+    background-color: #CE2020; /* Set your desired button background color */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Make the button round */
+    width: 60px; /* Set the button width and height to make it a circle */
+    height: 60px;
+    font-size: 1.2em;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-button::before {
+    content: "\2193"; /* Unicode arrow character for down arrow */
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

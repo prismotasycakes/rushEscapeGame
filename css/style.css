@@ -1,0 +1,28 @@
+header.navigation {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+nav li {
+    margin-right: 10px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #555;
+}
+.logo img {
+    max-height: 40px; /* Adjust the max height as needed */
+}

@@ -10,6 +10,81 @@ p {
 }
 
 /* Navigation Bar   */
+.navbar {
+    overflow: hidden;
+    background-color:#1E1E1E;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+}
+
+.navbar a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+.navbar div {
+    padding: 30px;
+    cursor: pointer;
+}
+
+.navbar div:hover {
+    color:#CE2020;
+}
+
+.rooms {
+    float: left;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+.menuArea {
+    display: none;
+    position: absolute;
+    background:#1E1E1E;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.rooms:hover .menuArea {
+    display: block;
+
+}
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 30px;
+    background-color:#1E1E1E;
+    
+}
+
+.column h3 {
+    color:#CE2020;
+}
+
+.column li {
+    float: none;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.column li:hover {
+    color:#CE2020;
+}
+
+
 header.navigation {
     background-color: #1E1E1E;
     color: white;
@@ -19,98 +94,6 @@ header.navigation {
     justify-content: space-between;
 }
 
-nav > ul {
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0 auto;
-    display: flex;
-    align-items: center;
-    position: relative;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -o-flex;
-    justify-content: center;
-    width: 100%;
-
-}
-
-nav a {
-    display: block;
-    color:white;
-    text-decoration: none;
-}
-
-nav ul li {
-    color: white;
-    list-style: none;
-    transition: 0.5s;
-}
-
-nav > ul > li > a {
-    padding: 15px 25px;
-}
-
-nav ul > li.rooms > a:after {
-    position: relative;
-    float: right;
-    content: '';
-    margin-left: 10px;
-    margin-top: 8px;
-}
-
-nav ul.menuArea {
-    padding: 40px 40px 0 40px;
-    background:#1E1E1E;
-    text-align: left;
-    border-top: 5px solid white;
-    z-index: 1;
-    position: absolute;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -o-flex;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    top: -9999px;
-    left: 0;
-
-}
-
-nav ul li:hover ul.menuArea {
-    top: 100%;
-}
-
-nav ul.menuArea ul {
-    width: 5%;
-    margin-bottom: 40px;
-    color: red;
-}
-
-nav ul.menuArea ul li {
-    display: block;
-}
-
-nav ul.menuArea ul li a{
-    margin-top: 10px;
-    color: white;
-    text-transform: none;
-}
-
-nav ul.menuArea ul li a:hover {
-    
-}
-
-
-
-
-nav li:hover {
-    color:#CE2020;
-    cursor: pointer;
-}
-
-nav li {
-    margin-right: 25px;
-}
 
 .bookNow {
     text-decoration: none;
@@ -126,7 +109,17 @@ nav li {
 .phone-icon-button img {
     width: 45px;
     height: 45px;
-    /* button slightly above by 7px, how to fix??*/
+
+}
+
+.phone-icon-button {
+    border: none;
+    background: none;
+    display: flex;
+    justify-content:center;
+    padding-right: 30px;
+    padding-left: 30px;
+    cursor: pointer;
 
 }
 
@@ -206,6 +199,7 @@ nav li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 /*Our Rooms*/
@@ -372,6 +366,7 @@ nav li {
 .functions {
     text-align: center;
     color: white;
+    padding-bottom: 20px;
 }
 
 .functionImgs {
@@ -382,8 +377,30 @@ nav li {
 
 .functionImgs img {
     padding: 20px;
-    padding-bottom: 70px;
 }
+
+.socialEvent {
+    position: relative;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.teamBuilding {
+    position: relative;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    font-weight: 700;
+  }
 
 /*Gallery*/
 .gallery {

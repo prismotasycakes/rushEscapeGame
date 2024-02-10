@@ -4,6 +4,11 @@ body {
     background-color: #1E1E1E;
 }
 
+p {
+    padding: 0;
+    margin: 0;
+}
+
 /* Navigation Bar   */
 header.navigation {
     background-color: #1E1E1E;
@@ -20,6 +25,10 @@ nav ul {
     padding: 0;
     display: flex;
     align-items: center;
+}
+
+nav li:hover {
+    color:#CE2020;
 }
 
 nav li {
@@ -127,7 +136,160 @@ nav li {
     text-align: center;
     color: white;
     background-color: #151515;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
 }
+
+.carouselOurRooms {
+    display: flex;
+    flex-direction: row;
+    padding: 0 10vw;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+}
+/* 
+.cardContainer {
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+} */
+
+.carouselOurRooms::webkit-scrollbar {
+    display: none;
+}
+
+.roomCard {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+    background-color: #656565;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+.roomPoster {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.roomImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.label {
+    position: absolute;
+    background: #CE2020;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    right: 10px;
+    top: 10px;
+}
+
+.cardButton {
+    margin: auto;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(0 0 0 / 0%);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    border-style:solid;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.cardButton img {
+    width: 22px;
+    height: 22px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.cardInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 13px;
+}
+
+/*left right buttons*/
+.leftButton, .rightButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    width: 10vw;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+
+}
+
+.leftButton {
+    left: 0;
+    
+}
+
+.rightButton {
+    right: 0;
+}
+
+.leftButton img, .rightButton img {
+    opacity: 0.6;
+}
+
+.leftButton:hover img, .rightButton:hover img {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Functions*/
 .functions {

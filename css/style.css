@@ -9,7 +9,7 @@ p {
     margin: 0;
 }
 
-/* Navigation Bar   */
+/*------------------------Navigation Bar------------------------*/
 .navbar {
     overflow: hidden;
     background-color:#1E1E1E;
@@ -127,7 +127,7 @@ header.navigation {
     max-height: 80px;
 }
 
-/*Hero image section*/
+/*------------------------Hero Image Section------------------------*/
 .hero-container {
     position: relative;
     height: 700px;
@@ -189,7 +189,7 @@ header.navigation {
     text-align: center;
     padding-bottom: 50px;
 }
-/*Feel the Rush*/
+/*------------------------Feel the Rush------------------------*/
 .videoContainer h2 {
     text-align: center;
     color: white;
@@ -202,7 +202,7 @@ header.navigation {
     padding-bottom: 20px;
 }
 
-/*Our Rooms*/
+/*-------------------------Our Rooms-----------------------------*/
 .ourRooms {
     text-align: center;
     color: white;
@@ -220,13 +220,6 @@ header.navigation {
     scroll-behavior: smooth;
 
 }
-/* 
-.cardContainer {
-    padding: 0 10vw;
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-} */
 
 .carouselOurRooms::webkit-scrollbar {
     display: none;
@@ -339,30 +332,7 @@ header.navigation {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Functions*/
+/*----------------------Functions------------------------*/
 .functions {
     text-align: center;
     color: white;
@@ -402,7 +372,7 @@ header.navigation {
     font-weight: 700;
   }
 
-/*Gallery*/
+/*------------------------Gallery------------------------*/
 .gallery {
     text-align: center;
     color: white;
@@ -412,7 +382,7 @@ header.navigation {
     padding: 20px;
 }
 
-/*Ready To Escape?*/
+/*------------------------Ready To Escape?------------------------*/
 .readyToEscape {
     text-align: center;
     color: white;
@@ -442,7 +412,7 @@ header.navigation {
 
 
 
-/*footer*/
+/*------------------------footer------------------------*/
 .footer {
     background-color: #1E1E1E;
     display: flex;

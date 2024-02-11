@@ -54,6 +54,7 @@ p {
     width: 100%;
     left: 0;
     z-index: 1;
+    top:14%;
 }
 
 .rooms:hover .menuArea {

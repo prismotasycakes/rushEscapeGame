@@ -85,6 +85,10 @@ p {
     color:#CE2020;
 }
 
+.column a:hover {
+    color:#CE2020;
+}
+
 
 header.navigation {
     background-color: #1E1E1E;
@@ -275,8 +279,13 @@ header.navigation {
     text-align: center;
     border-style:solid;
     display: flex;
-    justify-content: center;
+    justify-content: center;   
     
+}
+
+/* preventing hyperlink underlining */
+a {
+    text-decoration: none;
 }
 
 .cardButton img {

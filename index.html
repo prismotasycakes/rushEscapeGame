@@ -103,9 +103,19 @@
     <div class="ourRooms">
     <h2>OUR ROOMS</h2>
     <!--Filter Selection-->
- 
+    <!-- Location and Theme next to dropdown -->
+
+    <label for="room-location">Location</label>
+    <select id="locationSelect">
+        <option value="all">All</option>
+        <option value="south-yarra">South Yarra</option>
+        <option value="hawthorn">Hawthorn</option>
+        <option value="st-kilda">St Kilda</option>
+        <option value="richmond">Richmond</option>
+    </select>
+
         <label for="room-theme">Theme</label>
-         <select id="filterSelect">
+         <select id="themeSelect">
             <option value="all">All</option>
             <option value="adventure">ADVENTURE</option>
             <option value="fantasy">FANTASY</option>
@@ -113,13 +123,13 @@
             <option value="horror">HORROR</option>
             <option value="movie-tv">MOVIE/TV</option>
         </select>
-        
+
     <!--carousel with rooms here-->
     <div class="carouselOurRooms">
         <button class="leftButton"><img src="../rushEscapeGame/images/icons/arrowLeft.svg" alt=""></button>
         <button class="rightButton"><img src="../rushEscapeGame/images/icons/arrowRight.svg" alt=""></button>
         <!--card 1 - cluemanji-->
-        <div class="cardContainer adventure family-friendly">
+        <div class="cardContainer adventure family-friendly south-yarra">
             <div class="roomCard">
                 <div class="roomPoster">
                     <img src="../rushEscapeGame/images/rooms/1.png" class="roomImage" alt="">
@@ -140,7 +150,7 @@
         </div>
 
         <!--card 2 - hacksaw-->
-        <div class="cardContainer horror movie-tv">
+        <div class="cardContainer horror movie-tv hawthorn richmond">
             <div class="roomCard">
                 <div class="roomPoster">
                     <img src="../rushEscapeGame/images/rooms/2.png" class="roomImage" alt="">
@@ -161,7 +171,7 @@
         </div>
 
         <!--card 3 - monsters inc-->
-        <div class="cardContainer family-friendly movie-tv">
+        <div class="cardContainer family-friendly movie-tv south-yarra">
             <div class="roomCard">
                 <div class="roomPoster">
                     <img src="../rushEscapeGame/images/rooms/3.png" class="roomImage" alt="">
@@ -182,7 +192,7 @@
         </div>
 
         <!--card 4 - the conjoining-->
-        <div class="cardContainer horror movie-tv">
+        <div class="cardContainer horror movie-tv st-kilda">
             <div class="roomCard">
                 <div class="roomPoster">
                     <img src="../rushEscapeGame/images/rooms/4.png" class="roomImage" alt="">
@@ -203,7 +213,7 @@
         </div>
 
         <!--card 5 - its nightmare-->
-        <div class="cardContainer horror">
+        <div class="cardContainer horror south-yarra">
             <div class="roomCard">
                 <div class="roomPoster">
                     <img src="../rushEscapeGame/images/rooms/5.png" class="roomImage" alt="">
@@ -224,7 +234,7 @@
         </div>
 
         <!--card 6 - strangest thing-->
-        <div class="cardContainer adventure family-friendly movie-tv">
+        <div class="cardContainer adventure family-friendly movie-tv hawthorn">
             <div class="roomCard">
                 <div class="roomPoster">
                     <img src="../rushEscapeGame/images/rooms/6.png" class="roomImage" alt="">
@@ -245,7 +255,7 @@
         </div>
 
         <!--card 7 - the black pearl-->
-        <div class="cardContainer fantasy adventure family-friendly">
+        <div class="cardContainer fantasy adventure family-friendly st-kilda">
             <div class="roomCard">
                 <div class="roomPoster">
                     <img src="../rushEscapeGame/images/rooms/7.png" class="roomImage" alt="">
@@ -266,7 +276,7 @@
         </div>
 
         <!--card 8 - game of the dragon-->
-        <div class="cardContainer fantasy adventure family-friendly">
+        <div class="cardContainer fantasy adventure family-friendly south-yarra">
             <div class="roomCard">
                 <div class="roomPoster">
                     <img src="../rushEscapeGame/images/rooms/8.png" class="roomImage" alt="">
@@ -287,7 +297,7 @@
         </div>
 
         <!--card 9 - secret agent man-->
-        <div class="cardContainer family-friendly">
+        <div class="cardContainer family-friendly south-yarra">
             <div class="roomCard">
                 <div class="roomPoster">
                     <img src="../rushEscapeGame/images/rooms/9.png" class="roomImage" alt="">
@@ -308,7 +318,7 @@
         </div>
 
         <!--card 10 - the nine nine-->
-        <div class="cardContainer family-friendly movie-tv">
+        <div class="cardContainer family-friendly movie-tv hawthorn">
             <div class="roomCard">
                 <div class="roomPoster">
                     <img src="../rushEscapeGame/images/rooms/10.png" class="roomImage" alt="">
@@ -329,7 +339,7 @@
         </div>
 
         <!--card 11 - hacksaw part 2-->
-        <div class="cardContainer horror movie-tv">
+        <div class="cardContainer horror movie-tv south-yarra">
             <div class="roomCard">
                 <div class="roomPoster">
                     <span class="label">NEW</span>
@@ -351,7 +361,7 @@
         </div>
 
         <!--card 12 - rezident evil-->
-        <div class="cardContainer horror">
+        <div class="cardContainer horror st-kilda">
             <div class="roomCard">
                 <div class="roomPoster">
                     <img src="../rushEscapeGame/images/rooms/12.png" class="roomImage" alt="">
@@ -372,7 +382,7 @@
         </div>
 
         <!--card 13 - alice in wonderland-->
-        <div class="cardContainer fantasy family-friendly movie-tv">
+        <div class="cardContainer fantasy family-friendly movie-tv st-kilda">
             <div class="roomCard">
                 <div class="roomPoster">
                     <img src="../rushEscapeGame/images/rooms/13.png" class="roomImage" alt="">

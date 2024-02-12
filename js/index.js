@@ -44,16 +44,40 @@ heroButton.addEventListener('click', () => {
 
 //Filter select Carousel//
 
-document.getElementById("filterSelect").addEventListener("change", function() {
-    var filterValue = this.value;
-    var cards = document.querySelectorAll(".cardContainer");
+// document.getElementById("filterSelect").addEventListener("change", function() {
+//     var filterValue = this.value;
+//     var cards = document.querySelectorAll(".cardContainer");
+
+//     cards.forEach(function(card) {
+//         var categories = card.className.split(" ");
+//         if (filterValue === "all" || categories.includes(filterValue)) {
+//             card.style.display = "block";
+//         } else {
+//             card.style.display = "none";
+//         }
+//     });
+// });
+
+function filterCards() {
+    var themeFilterValue = document.getElementById("themeSelect").value;
+    var locationFilterValue = document.getElementById("locationSelect").value;
+    var cards = document.querySelectorAll(".carouselOurRooms .cardContainer");
 
     cards.forEach(function(card) {
-        var categories = card.className.split(" ");
-        if (filterValue === "all" || categories.includes(filterValue)) {
+        var themeCategories = card.className.split(" ");
+        var locationCategories = card.className.split(" ");
+
+        if ((themeFilterValue === "all" || themeCategories.includes(themeFilterValue)) && 
+            (locationFilterValue === "all" || locationCategories.includes(locationFilterValue))) {
             card.style.display = "block";
         } else {
             card.style.display = "none";
         }
     });
-});
+}
+
+document.getElementById("themeSelect").addEventListener("change", filterCards);
+document.getElementById("locationSelect").addEventListener("change", filterCards);
+
+// Initial call to filter cards when the page loads
+filterCards();

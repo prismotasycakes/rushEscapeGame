@@ -52,7 +52,7 @@ p {
     width: 100%;
     left: 0;
     z-index: 1;
-    top:14%;
+    top: 100px;
 }
 
 .rooms:hover .menuArea {
@@ -223,6 +223,7 @@ header.navigation {
     padding: 0 10vw;
     overflow-x: auto;
     scroll-behavior: smooth;
+    padding-top: 20px;
 
 }
 
@@ -339,8 +340,24 @@ a {
     opacity: 1;
 }
 
+/*----------------filter selection--------------------*/
+label {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
 
-
+select {
+    padding: 10px;
+    border-style: solid;
+    background-color: rgb(0 0 0 / 0%);
+    border-radius: 30px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    border-width: 2px;
+    border-color: white;
+}
 
 /*----------------------Functions------------------------*/
 .functions {

@@ -261,10 +261,16 @@ header.navigation {
     background: #CE2020;
     padding: 5px;
     border-radius: 5px;
-    color: white;
+    border-color: white;
+    /* color: white; */
     right: 10px;
     top: 10px;
 }
+
+#themeSelect, #locationSelect {
+    background-color: #1E1E1E;
+}
+
 
 .cardButton {
     margin: auto;

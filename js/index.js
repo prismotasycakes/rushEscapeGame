@@ -44,20 +44,6 @@ heroButton.addEventListener('click', () => {
 
 //Filter select Carousel//
 
-// document.getElementById("filterSelect").addEventListener("change", function() {
-//     var filterValue = this.value;
-//     var cards = document.querySelectorAll(".cardContainer");
-
-//     cards.forEach(function(card) {
-//         var categories = card.className.split(" ");
-//         if (filterValue === "all" || categories.includes(filterValue)) {
-//             card.style.display = "block";
-//         } else {
-//             card.style.display = "none";
-//         }
-//     });
-// });
-
 function filterCards() {
     var themeFilterValue = document.getElementById("themeSelect").value;
     var locationFilterValue = document.getElementById("locationSelect").value;

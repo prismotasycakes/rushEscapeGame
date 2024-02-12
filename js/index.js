@@ -43,19 +43,6 @@ heroButton.addEventListener('click', () => {
 });
 
 //Filter select Carousel//
-// document.getElementById("filterSelect").addEventListener("change", function() {
-//     var filterValue = this.value;
-//     var cards = document.getElementsByClassName("cardContainer");
-
-//     for (var i = 0; i < cards.length; i++) {
-//         var card = cards[i];
-//         if (filterValue === "all" || card.classList.contains(filterValue)) {
-//             card.classList.remove("hidden");
-//         } else {
-//             card.classList.add("hidden");
-//         }
-//     }
-// });
 
 document.getElementById("filterSelect").addEventListener("change", function() {
     var filterValue = this.value;
